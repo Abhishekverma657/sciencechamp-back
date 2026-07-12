@@ -27,7 +27,7 @@ const createPayment = async (req, res) => {
             return res.status(404).json({ success: false, message: 'Registration not found' });
         }
 
-        const amount = 1; // Testing fee in INR
+        const amount = 99; // Testing fee in INR
 
         const instance = new Razorpay({
             key_id: process.env.RAZORPAY_KEY_ID,
